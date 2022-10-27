@@ -21,7 +21,7 @@ export const CoinCard = ({ coin }: CoinCardProps) => {
         <View style={styles.card}>
           <View style={styles.content}>
             <Text style={styles.title}>{coin.name}</Text>
-            <Text style={styles.rate}>{coin.rate}</Text>
+            <Text style={styles.subtitle}>{coin.rate}</Text>
           </View>
         </View>
       </TouchableOpacity>
@@ -31,8 +31,12 @@ export const CoinCard = ({ coin }: CoinCardProps) => {
         closeModal={() => setIsModalVisible(false)}
         height={"25%"}>
         <View style={styles.modalContainer}>
-          <Text>Currency: {coin.name}</Text>
-          <Text>Rate: {coin.rate}</Text>
+          <Text style={styles.property}>
+            Currency: <Text style={styles.name}> {coin.name}</Text>
+          </Text>
+          <Text style={styles.property}>
+            Rate: <Text style={styles.rate}> {coin.rate}</Text>
+          </Text>
         </View>
       </BottomModal>
     </>

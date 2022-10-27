@@ -1,15 +1,18 @@
 import { View, Text, FlatList, RefreshControl } from "react-native";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { CoinCard } from "@components";
 import styles from "./styles";
 import { useCoins } from "@hooks";
 import { CoinListLoader } from "./loader/coinlist.loader";
+import { Coin } from "@types";
 
-interface CoinListProps {}
+interface CoinListProps {
+  coins: Coin[];
+}
 
-export const CoinList = (props: CoinListProps) => {
+export const CoinList = ({ coins }: CoinListProps) => {
   const [refreshing, setRefreshing] = useState(false);
-  const { coins, getCoins } = useCoins();
+  const { getCoins } = useCoins();
 
   const onRefresh = React.useCallback(() => {
     setRefreshing(true);

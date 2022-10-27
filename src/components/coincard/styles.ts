@@ -33,7 +33,7 @@ export default StyleSheet.create({
     color: Colors.white,
     fontFamily: Fonts.montserratSemiBold,
   },
-  rate: {
+  subtitle: {
     fontSize: 12,
     color: Colors.warning,
     fontFamily: Fonts.montserratMediumItalic,
@@ -41,9 +41,25 @@ export default StyleSheet.create({
     marginTop: 2,
   },
   modalContainer: {
-    paddingHorizontal: 10,
+    paddingHorizontal: 30,
   },
   modalStyle: {
     backgroundColor: Colors.primary,
+  },
+  property: {
+    fontSize: 14,
+    color: Colors.black,
+    fontFamily: Fonts.montserratMedium,
+    marginBottom: 10,
+  },
+  name: {
+    fontSize: 24,
+    color: Colors.primary,
+    fontFamily: Fonts.montserratBold,
+  },
+  rate: {
+    fontSize: 24,
+    color: Colors.warning,
+    fontFamily: Fonts.montserratBold,
   },
 });

@@ -32,6 +32,7 @@ export interface InputProps {
   onBlur?: () => void;
   onPressIn?: (e: any) => void;
   onPressOut?: (e: any) => void;
+  onChange?: (e: any) => void;
 }
 
 export const Input = (props: InputProps) => {
@@ -51,6 +52,7 @@ export const Input = (props: InputProps) => {
     onBlur,
     onPressIn,
     onPressOut,
+    onChange: onChangeValue,
   } = props;
   const [showPassword, setShowPassword] = useState(secureTextEntry);
   const [isInFocus, setIsInFocus] = useState<boolean>(false);
@@ -129,7 +131,12 @@ export const Input = (props: InputProps) => {
               placeholderTextColor={Colors.color_c4c4c4}
               keyboardType={keyboardType}
               value={value}
-              onChangeText={onChange}
+              onChangeText={text => {
+                onChange(text);
+                if (onChangeValue) {
+                  onChangeValue(text);
+                }
+              }}
               editable={editable}
               secureTextEntry={showPassword}
               returnKeyType="done"
