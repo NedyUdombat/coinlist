@@ -8,10 +8,7 @@ export default StyleSheet.create({
     fontFamily: Fonts.montserratRegular,
     fontSize: 14,
     lineHeight: 18,
-    // flex: 1,
     borderRadius: 8,
-    backgroundColor: Colors.danger,
-    // backgroundColor: Colors.color_f3f3f3,
     paddingLeft: 16,
     height: 48,
     minHeight: 48,
@@ -21,7 +18,6 @@ export default StyleSheet.create({
   container: {
     marginTop: 16,
     marginBottom: 4,
-    // zIndex: -1,
   },
   containerWithError: {
     borderColor: Colors.danger,

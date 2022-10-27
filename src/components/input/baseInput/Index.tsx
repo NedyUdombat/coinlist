@@ -117,7 +117,7 @@ export const Input = (props: InputProps) => {
                 {
                   backgroundColor: !editable
                     ? Colors.color_636363
-                    : Colors.gray,
+                    : Colors.white,
                   color: !editable ? Colors.white : Colors.black_3,
                   fontWeight: !editable ? "400" : "400",
                   fontFamily: !editable

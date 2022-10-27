@@ -3,7 +3,7 @@ import { Colors } from "@lib";
 
 export const globalStyles = StyleSheet.create({
   container: {
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.info,
     flex: 1,
     minHeight: "100%",
   },

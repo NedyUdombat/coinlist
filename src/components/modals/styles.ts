@@ -49,13 +49,13 @@ export default StyleSheet.create({
   title: {
     fontSize: 20,
     lineHeight: 24,
-    fontFamily: Fonts.avertaSemiBold,
+    fontFamily: Fonts.montserratSemiBold,
     color: Colors.danger,
   },
   subtitle: {
     fontSize: 16,
     lineHeight: 22.4,
-    fontFamily: Fonts.avertaLight,
+    fontFamily: Fonts.montserratLight,
     color: Colors.danger,
     marginBottom: 12,
   },
@@ -64,6 +64,7 @@ export default StyleSheet.create({
     width: "100%",
     backgroundColor: Colors.black,
     opacity: 0.6,
+    zIndex: -1,
   },
 
   fullPageCenteredView: {
@@ -101,24 +102,5 @@ export default StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     marginBottom: 32,
-  },
-  fullPageCloseIcon: {
-    width: 40,
-    height: 40,
-  },
-  fullPageCloseIconButton: {
-    width: 40,
-    height: 40,
-    fontFamily: Fonts.avertaBold,
-  },
-  fullPageCloseIconButtonContainer: {
-    alignItems: "center",
-  },
-  fullPageTitle: {
-    fontSize: 20,
-    lineHeight: 24,
-    fontFamily: Fonts.avertaBold,
-    color: Colors.danger,
-    marginLeft: 8,
   },
 });
