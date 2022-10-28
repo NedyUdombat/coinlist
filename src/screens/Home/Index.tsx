@@ -7,7 +7,7 @@ import { Logo, CoinList, Search } from "@components";
 import { useCoins } from "@hooks";
 
 export const HomeScreen = () => {
-  const { coins, control, handleSearchInput } = useCoins();
+  const { coins, control, handleSearchInput, status } = useCoins();
 
   return (
     <ScreenLayout>
@@ -16,7 +16,7 @@ export const HomeScreen = () => {
           <Logo />
         </View>
         <View style={styles.contentContainer}>
-          <Search control={control} handleSearchInput={handleSearchInput} />
+          <Search control={control} status={status} handleSearchInput={handleSearchInput} />
           <CoinList coins={coins} />
         </View>
       </View>

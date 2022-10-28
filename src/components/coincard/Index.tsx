@@ -1,7 +1,8 @@
-import { View, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
-import { Coin } from "@types";
+import { View, Text, TouchableOpacity } from "react-native";
+
 import styles from "./styles";
+import { Coin } from "@types";
 import { BottomModal } from "@components";
 
 interface CoinCardProps {

@@ -1,7 +1,8 @@
-import { View, Text, FlatList, RefreshControl } from "react-native";
-import React, { useState, useEffect } from "react";
-import { CoinCard } from "@components";
+import React, { useState } from "react";
+import { View, Animated, RefreshControl } from "react-native";
+
 import styles from "./styles";
+import { CoinCard } from "@components";
 import { useCoins } from "@hooks";
 import { CoinListLoader } from "./loader/coinlist.loader";
 import { Coin } from "@types";
@@ -25,7 +26,7 @@ export const CoinList = ({ coins }: CoinListProps) => {
   return (
     <View style={styles.container}>
       {coins.length > 0 ? (
-        <FlatList
+        <Animated.FlatList
           data={coins}
           renderItem={renderCoinCard}
           keyExtractor={item => item.key}

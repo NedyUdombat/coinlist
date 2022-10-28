@@ -1,2 +1,1 @@
-export const AppConstants = {
-};
+export const AppConstants = {};

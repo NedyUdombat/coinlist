@@ -66,37 +66,6 @@ export default StyleSheet.create({
     opacity: 0.6,
     zIndex: -1,
   },
-
-  fullPageCenteredView: {
-    flex: 1,
-    alignItems: "center",
-    backgroundColor: Colors.gray,
-    flexDirection: "column",
-  },
-  fullPageModalView: {
-    width: "100%",
-    paddingTop: Helpers.switchPlatformStyles("ios", 60, 20),
-    flex: 1,
-    backgroundColor: Colors.white,
-    borderRadius: 0,
-    borderBottomRightRadius: 0,
-    borderBottomLeftRadius: 0,
-    padding: 24,
-    ...Platform.select({
-      ios: {
-        shadowColor: Colors.black,
-        shadowOffset: {
-          width: 0,
-          height: 2,
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 4,
-      },
-      android: {
-        elevation: 6,
-      },
-    }),
-  },
   header: {
     flexDirection: "row",
     alignItems: "center",

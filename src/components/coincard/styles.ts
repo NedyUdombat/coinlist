@@ -21,7 +21,7 @@ export default StyleSheet.create({
         elevation: 3,
       },
     }),
-    marginBottom: 20,
+    marginBottom: 15,
     width: 185,
     height: 70,
     justifyContent: "center",
