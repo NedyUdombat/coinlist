@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { Colors, Fonts } from "@lib";
+import { Colors } from "@lib";
 
 export default StyleSheet.create({
   container: {
@@ -14,8 +14,5 @@ export default StyleSheet.create({
     backgroundColor: Colors.info,
     paddingHorizontal: 24,
     flex: 1,
-  },
-  submitButton: {
-    marginTop: 40,
   },
 });
